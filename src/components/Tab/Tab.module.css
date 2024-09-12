@@ -1,0 +1,23 @@
+/* Tab.module.css */
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 176px;
+  gap: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  color: #ffffff;
+  background: orange;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+.active {
+  background: #f8caa3;
+  color: #9f938b;
+}
