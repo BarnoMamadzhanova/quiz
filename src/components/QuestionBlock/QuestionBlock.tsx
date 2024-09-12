@@ -70,6 +70,7 @@ const QuestionBlock: React.FC<QuestionBlockProps> = ({
       setCurrentQuestionIndex(nextIndex);
       setUserSelections(new Array(data[nextIndex].options.length).fill(null));
       setIsAnswerCorrect(false);
+      onCorrectnessChange(0);
     } else {
       alert("You've completed all the questions!");
     }
