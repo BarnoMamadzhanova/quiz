@@ -14,6 +14,36 @@
         "free coffee",
         "dog in office"
       ]
+    },
+    {
+      "question": "What makes a good work-life balance?",
+      "options": [
+        ["flexible hours", "fixed hours"],
+        ["no vacation", "regular vacation"],
+        ["high salary", "low salary"],
+        ["work from home", "work from office"]
+      ],
+      "correctAnswers": [
+        "flexible hours",
+        "regular vacation",
+        "high salary",
+        "work from home"
+      ]
+    },
+    {
+      "question": "What is important for team collaboration?",
+      "options": [
+        ["good communication", "poor communication"],
+        ["team building activities", "no activities"],
+        ["clear goals", "vague goals"],
+        ["open workspace", "closed offices"]
+      ],
+      "correctAnswers": [
+        "good communication",
+        "team building activities",
+        "clear goals",
+        "open workspace"
+      ]
     }
   ]
 }
