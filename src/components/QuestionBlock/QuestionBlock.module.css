@@ -14,3 +14,21 @@
   line-height: 140%;
   color: #ffffff;
 }
+
+.nextButton {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  color: #ffffff;
+  background: #76e0c2;
+  border-radius: 100px;
+  padding: 12px 24px;
+  border: none;
+}
+
+.nextButton:hover {
+  background: #a5e7e2;
+  color: #4cad94;
+}

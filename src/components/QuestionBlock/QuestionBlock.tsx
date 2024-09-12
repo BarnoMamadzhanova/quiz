@@ -64,16 +64,16 @@ const QuestionBlock: React.FC<QuestionBlockProps> = ({
   };
 
   // Move to the next question
-  // const handleNextQuestion = () => {
-  //   const nextIndex = currentQuestionIndex + 1;
-  //   if (nextIndex < data.length) {
-  //     setCurrentQuestionIndex(nextIndex);
-  //     setUserSelections(new Array(data[nextIndex].options.length).fill(null));
-  //     setIsAnswerCorrect(false);
-  //   } else {
-  //     alert("You've completed all the questions!");
-  //   }
-  // };
+  const handleNextQuestion = () => {
+    const nextIndex = currentQuestionIndex + 1;
+    if (nextIndex < data.length) {
+      setCurrentQuestionIndex(nextIndex);
+      setUserSelections(new Array(data[nextIndex].options.length).fill(null));
+      setIsAnswerCorrect(false);
+    } else {
+      alert("You've completed all the questions!");
+    }
+  };
 
   if (!data.length || !data[currentQuestionIndex]) return <div>Loading...</div>;
 
@@ -92,11 +92,11 @@ const QuestionBlock: React.FC<QuestionBlockProps> = ({
         )}
       />
       <h2>The answer is {isAnswerCorrect ? "correct" : "incorrect"}</h2>
-      {/* {isAnswerCorrect && (
+      {isAnswerCorrect && (
         <button className={classes.nextButton} onClick={handleNextQuestion}>
           Next Question
         </button>
-      )} */}
+      )}
     </div>
   );
 };
