@@ -8,4 +8,36 @@
   border-radius: 100px;
   width: 900px;
   max-width: 100%;
+  border: 2px solid #f9d29f;
+}
+
+/* Media query for screens with a max width of 950px */
+@media (max-width: 950px) {
+  .tabs {
+    width: 700px;
+  }
+}
+
+/* Media query for screens with a max width of 750px */
+@media (max-width: 750px) {
+  .tabs {
+    width: 550px;
+  }
+}
+
+/* Media query for screens with a max width of 550px */
+@media (max-width: 550px) {
+  .tabs {
+    width: 400px;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+}
+
+/* Media query for screens with a max width of 400px */
+@media (max-width: 400px) {
+  .tabs {
+    width: 90vw;
+  }
 }

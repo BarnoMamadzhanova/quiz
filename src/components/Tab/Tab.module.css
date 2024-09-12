@@ -4,7 +4,6 @@
   text-align: center;
   padding: 12px 0;
   cursor: pointer;
-  cursor: pointer;
   color: #ffffff;
   font-family: "Mulish";
   font-style: normal;
@@ -12,6 +11,8 @@
   font-size: 24px;
   line-height: 100%;
   transition: background 0.3s, color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tab.active {
@@ -29,4 +30,21 @@
 .tab.disabled {
   cursor: not-allowed;
   opacity: 0.7;
+}
+
+/* Media query for screens with a max width of 550px */
+@media (max-width: 550px) {
+  .tab,
+  .tab.active,
+  .tab:hover {
+    font-size: 20px;
+    border-radius: 0;
+  }
+}
+
+/* Media query for screens with a max width of 400px */
+@media (max-width: 400px) {
+  .tab {
+    font-size: 18px;
+  }
 }

@@ -26,9 +26,41 @@
   border-radius: 100px;
   padding: 12px 24px;
   border: none;
+  margin-bottom: 20px;
+  border: 2px solid #fbfbfb;
 }
 
 .nextButton:hover {
   background: #a5e7e2;
   color: #4cad94;
+}
+
+/* Media query for screens with a max width of 550px */
+@media (max-width: 550px) {
+  .questionBlock {
+    gap: 24px;
+  }
+
+  .questionBlock h2 {
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  .nextButton {
+    font-size: 24px;
+    line-height: 100%;
+    border-radius: 16px !important;
+    margin-bottom: 14px;
+  }
+}
+
+/* Media query for screens with a max width of 400px */
+@media (max-width: 400px) {
+  .questionBlock {
+    gap: 20px;
+  }
+
+  .questionBlock h2 {
+    line-height: 120%;
+  }
 }
