@@ -7,7 +7,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState<string | null>(null);
 
   return (
-    <div className={classes.tabsContainer}>
+    <div className={classes.tabs}>
       {tabs.map((tab) => (
         <Tab
           key={tab.label}

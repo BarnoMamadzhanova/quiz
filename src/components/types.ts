@@ -11,3 +11,8 @@ export interface TabProps {
 export interface TabsProps {
   tabs: { label: string }[];
 }
+
+// Define the TabsBlockProps interface for TabsBlock
+export interface TabsBlockProps {
+  options: { label: string }[][];
+}
