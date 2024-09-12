@@ -9,12 +9,12 @@ export interface TabProps {
 
 // Define the TabsProps interface for Tabs
 export interface TabsProps {
-  tabs: { label: string }[];
+  tabs: TabProps[];
 }
 
 // Define the TabsBlockProps interface for TabsBlock
 export interface TabsBlockProps {
-  options: { label: string }[][];
+  options: TabProps[][];
 }
 
 // Define the QuestionData interface for QuestionBlock
