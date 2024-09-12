@@ -22,6 +22,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
           label={tab.label}
           isActive={activeTab === tab.label}
           onClick={() => handleTabClick(tab.label)}
+          disabled={tab.disabled}
         />
       ))}
     </div>

@@ -31,7 +31,7 @@ const QuestionBlock: React.FC<QuestionBlockProps> = ({
 
   // Handle tab selection
   const handleTabSelection = (tabIndex: number, selectedLabel: string) => {
-    console.log("Tab clicked:", selectedLabel);
+    if (isAnswerCorrect) return;
 
     const updatedSelections = [...userSelections];
     updatedSelections[tabIndex] = selectedLabel;
@@ -63,7 +63,7 @@ const QuestionBlock: React.FC<QuestionBlockProps> = ({
     onCorrectnessChange(percentage);
   };
 
-  // Move to the next question
+  // Handle moving to the next question
   const handleNextQuestion = () => {
     const nextIndex = currentQuestionIndex + 1;
     if (nextIndex < data.length) {
@@ -88,6 +88,7 @@ const QuestionBlock: React.FC<QuestionBlockProps> = ({
             label,
             isActive: userSelections[index] === label,
             onClick: () => handleTabSelection(index, label),
+            disabled: isAnswerCorrect,
           }))
         )}
       />

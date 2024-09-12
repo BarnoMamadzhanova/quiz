@@ -5,6 +5,7 @@ export interface TabProps {
   label: string;
   isActive: boolean;
   onClick: () => void;
+  disabled?: boolean;
 }
 
 // Define the TabsProps interface for Tabs
