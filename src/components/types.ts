@@ -23,3 +23,8 @@ export interface QuestionData {
   options: string[][];
   correctAnswers: string[];
 }
+
+// Define the QuestionBlockProps interface for QuestionBlock
+export interface QuestionBlockProps {
+  onCorrectnessChange: (percentage: number) => void;
+}

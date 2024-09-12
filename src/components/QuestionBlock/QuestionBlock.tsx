@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import classes from "./QuestionBlock.module.css";
 import TabsBlock from "../TabsBlock/TabsBlock";
-import { QuestionData } from "../types";
+import { QuestionData, QuestionBlockProps } from "../types";
 
-const QuestionBlock: React.FC = () => {
+const QuestionBlock: React.FC<QuestionBlockProps> = ({
+  onCorrectnessChange,
+}) => {
   const [data, setData] = useState<QuestionData[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userSelections, setUserSelections] = useState<string[]>([]);
@@ -48,6 +50,17 @@ const QuestionBlock: React.FC = () => {
     );
 
     setIsAnswerCorrect(isCorrect);
+
+    // Calculate correctness percentage
+    const correctCount = updatedSelections.reduce(
+      (count, selection, index) =>
+        count + (selection === correctAnswers[index] ? 1 : 0),
+      0
+    );
+    const percentage = (correctCount / correctAnswers.length) * 100;
+
+    // Path to parent component the correctness percentage
+    onCorrectnessChange(percentage);
   };
 
   // Move to the next question
