@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 8px;
   background: orange;
   border-radius: 100px;
+  width: 900px;
+  max-width: 100%;
 }

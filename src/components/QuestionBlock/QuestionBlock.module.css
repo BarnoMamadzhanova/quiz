@@ -1,0 +1,16 @@
+/* QuestionBlock.module.css */
+.questionBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.questionBlock h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #ffffff;
+}

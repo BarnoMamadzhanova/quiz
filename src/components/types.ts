@@ -16,3 +16,10 @@ export interface TabsProps {
 export interface TabsBlockProps {
   options: { label: string }[][];
 }
+
+// Define the QuestionData interface for QuestionBlock
+export interface QuestionData {
+  question: string;
+  options: string[][];
+  correctAnswers: string[];
+}
