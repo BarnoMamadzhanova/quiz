@@ -9,5 +9,5 @@ export interface TabProps {
 
 // Define the TabsProps interface for Tabs
 export interface TabsProps {
-  tabs: TabProps[];
+  tabs: { label: string }[];
 }

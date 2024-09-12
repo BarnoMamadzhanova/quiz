@@ -6,10 +6,8 @@
   align-items: center;
   padding: 21px 176px;
   gap: 10px;
-  border-radius: 100px;
   cursor: pointer;
   color: #ffffff;
-  background: orange;
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
@@ -17,7 +15,15 @@
   line-height: 160%;
 }
 
-.active {
+.tab .active {
   background: #f8caa3;
   color: #9f938b;
+  border-radius: 100px;
+}
+
+.tab:hover {
+  background: #f8caa3;
+  color: #9f938b;
+  border-radius: 100px;
+  cursor: pointer;
 }
